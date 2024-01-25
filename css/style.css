@@ -46,6 +46,7 @@ header{
     justify-content: center;
     align-items: start;
     justify-items: center;
+    border-color: blueviolet;
 }
 .imgME{
     background-image: url(../medios/fotomia.jpeg);
@@ -60,7 +61,8 @@ header{
     background-position-y: 40%;
     grid-area: foto;
     align-self: center;
-    
+    border-color: blueviolet;
+
 }
 
 .lista{
@@ -81,10 +83,14 @@ header{
     font-size: 50px;
     overflow: hidden;
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 5px 5px;
     letter-spacing: 2px;
     grid-area: name;
+    border-color: #48cae4;
+    background-color: rgb(255, 255, 255);
+    border-color: blueviolet;
+
 }
 .texto{
     font-family: 'Oswald', sans-serif;
@@ -97,6 +103,8 @@ header{
     margin: 2rem 2rem;
     padding-left: 15rem;
     grid-area: tex;
+    border-color: blueviolet;
+
 }
 .textoblog{
     font-family: 'Oswald', sans-serif;
