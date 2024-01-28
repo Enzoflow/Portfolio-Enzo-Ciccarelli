@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.5rem;
+    background-color: #000000;
+    max-width: 100%;
+    overflow-x: hidden;
+    header{
+        background-color: #48cae4;
+        block-size: 70px;
+        position: sticky;
+        top: 0px;
+        width: 100%;
+        nav{
+            text-align: center;
+            ul{
+                list-style: none;
+                li{
+                    float: left;
+                    font-family: 'Oswald', sans-serif;
+                    font-size: 2rem;
+                    a{
+                        display: block;
+                        padding: 1rem;
+                        color: #000000;
+                        text-decoration: none;
+
+                    }
+                    :hover{
+                        background: #caf0f8;
+                    }
+                }
+            }
+        }
+    }
+    main{
+        display: grid;
+        flex-direction: row;
+        section{
+            padding: 3rem;
+            .contacto{
+                background-image: url(../medios/ig.png);
+                background-position: 37% 43%;
+                background-size: 40px;
+                background-repeat: no-repeat;
+                text-align: center;
+                color: white;
+                border: solid #03045e;
+                background-color: #023e8a;
+                display: flex;
+                flex-direction: column;
+                .tituloContacto{
+                    font-family: 'Merriweather', serif;
+                    font-size: 50px;
+                    overflow: hidden;
+                    text-align: center;
+                    width: 100%;
+                    color: black;
+                }
+                .textoContacto{
+                    font-family: 'Oswald', sans-serif;
+                    font-size: 30px;
+                    color: black;
+                }
+                .contactoWsp{
+                    background-image: url(../medios/wsp.png);
+                    background-size: 43px;
+                    background-position: 28% 45%;
+                    background-repeat: no-repeat;
+                    text-align: center;
+                }
+                .contactoGmail{
+                    background-image: url(../medios/logoGmail.png);
+                    background-size: 65px;
+                    background-position: 26% 45%;
+                    background-repeat: no-repeat;
+                    text-align: center;
+                }    
+            }   
+        }
+        section{
+            .set{
+                background-color: #023e8a;
+                border: solid #03045e;
+                .formulario{
+                    display: flex;
+                    flex-direction: column;
+                }
+                .nameFormulario{
+                    display: flex;
+                    flex-direction: column; 
+                }
+                .casillasFormulario{
+                    display: flex;
+                    flex-direction: column;
+                }
+
+            }
+        }
+    }
+}
