@@ -89,7 +89,7 @@ header{
     border-color: #48cae4;
     background-color: rgb(255, 255, 255);
     width: 100%;
-    border-color: blueviolet;
+    border: solid blueviolet;
     border-bottom-right-radius: 50%;
 }
 .texto{
@@ -260,7 +260,7 @@ section{
     display: grid;
     justify-items: center;
     align-items: center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 100px;
     grid-template-areas: 
     "titu titu"
@@ -268,29 +268,51 @@ section{
 }
 .proyTitulo{
     font-family: 'Merriweather', serif;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 7rem;
     text-align: center;
-    background-color: aqua;
-    width: 100%;
     grid-area: titu;
+    background-color: #fff;
+    border-radius: 53rem;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -4px rgba(0,0,0,.1);
+    box-sizing: border-box;
+    justify-content: space-around;
+    padding: 2rem;
+    width: 97rem;
+    margin-top: 9rem;
+    border: solid blueviolet;
 }
 .pryTexto{
     background-color: burlywood;
     font-size: 2rem;
     grid-area: p;
-    height: 25rem;
+    height: 23rem;
+    margin-top: 12rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -4px rgba(0,0,0,.1);
+    box-sizing: border-box;
+    justify-content: space-around;
+    padding: 4rem;
+    width: 111rem;
+    
 }
 .mapa{
-    background-color: wheat;
+    background-color: black;
     font-family: 'Merriweather', serif;
     font-size: 3rem;
     border: #48cae4;
     text-align: center;
     block-size: 510px;
     writing-mode: horizontal-tb;
+    border: solid blueviolet;
     
 }   
+.texmap{
+    font-size: 5rem;
+    font-family: 'Merriweather', serif;
+    color: white;
+}
 .set{
     background-color: #023e8a;
     border: solid #03045e;
@@ -348,18 +370,29 @@ section{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 100px);
         grid-template-areas:
-        "foto"
-        "name"
-        "tex"
-        "tex";
-        justify-items: center;    
-        width: 100%;
+            "foto"
+            "name"
+            "tex"
+            "tex";
+        justify-items: center;
+        width: 1%;
         border-radius: 2rem;
     }
     .titulos{
-        font-size: 3rem;
-        width: 100%;
-        text-align: center; 
+        font-family: "Merriweather", serif;
+        font-size: 50px;
+        overflow: hidden;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        padding: 20px 20px;
+        letter-spacing: 2px;
+        grid-area: name;
+        border-color: #48cae4;
+        background-color: rgb(255, 255, 255);
+        width: 1rem;
+        border-color: blueviolet;
+        border-bottom-right-radius: 50%;
+
     }
     .textoblog{
         font-size: 2rem;
@@ -401,19 +434,46 @@ section{
         background-image: none;
     }
     .texto{ 
-        font-size: 1.5rem;
-        height: 1px;
-        padding-left: 6rem;    
+        font-family: "Oswald", sans-serif;
+        font-size: 2.5rem;
+        height: 91px;
+        display: inline-block;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        margin: 3rem 4rem;
+        padding-left: -8rem;
+        grid-area: tex;
+        border: 2px solid blueviolet;   
     }
     .contenidoDos{  
-        width: 100%;
-        border: 2rem;
-        margin-top: 2rem;
+        box-sizing: border-box;
+        padding: 2rem;
+        width: 20rem;
+        grid-template-rows: -6px;
+        grid-template-areas: 
+        "scrip"
+        "html"
+        "css"
+        "git";
+        gap: 20px;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 7px solid violet;
     }
     .imgME{     
-        height: 10rem;
-        width: 10rem;
-
+        background-repeat: no-repeat;
+        block-size: 30px 30px;
+        background-size: 250%;
+        border: 3px solid blueviolet;
+        border-radius: 2rem;
+        height: 28rem;
+        width: 30rem;
+        background-position-x: 49%;
+        background-position-y: 39%;
+        grid-area: foto;
+        border-color: blueviolet;
     }
     nav ul li{
         font-size: 1.7rem;
@@ -421,7 +481,7 @@ section{
 }
 @media only screen and (max-width:413px) {
     body{
-        background-color: brown;
+        background-color: rgb(0, 0, 0);
     }
     header{
         font-size: 1rem;
@@ -430,4 +490,49 @@ section{
     nav ul li{  
         font-size: 1.5rem;
     }
+    .proyectos{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px;
+        grid-template-areas: 
+        "titu" 
+        "titu"
+         "p" 
+         "p";
+    }
+    .proyTitulo{
+        font-family: 'Merriweather', serif;
+        color: rgb(0, 0, 0);
+        font-size: 3rem;
+        text-align: center;
+        grid-area: titu;
+        background-color: #fff;
+        border-radius: 1rem;
+        box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -4px rgba(0,0,0,.1);
+        box-sizing: border-box;
+        justify-content: space-around;
+        padding: 2rem;
+        width: 100%;
+        margin-top: 1rem;
+        border: solid blueviolet;
+    }
+    .pryTexto{
+        background-color: burlywood;
+        font-size: 2rem;
+        grid-area: p;
+        height: 23rem;
+        margin-top: 2rem;
+        background-color: #fff;
+        border-radius: 2rem;
+        box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -4px rgba(0,0,0,.1);
+        box-sizing: border-box;
+        justify-content: space-around;
+        padding: 4rem;
+        width: 100%;
+        border: solid blueviolet;
+
+    }
+    
 }   
