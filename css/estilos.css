@@ -124,7 +124,7 @@ body main section .contenidoDos {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 7px solid violet;
+  border: 7px solid blueviolet;
 }
 body main section .contenidoDos .contenidoDosTexto {
   color: rgb(0, 0, 0);
@@ -167,57 +167,11 @@ body main section .contenidoDos .imgGit {
   grid-area: git;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.5rem;
-  background-color: #000000;
-  max-width: 100%;
-  overflow-x: hidden;
-}
-body header {
-  background-color: #48cae4;
-  block-size: 70px;
-  position: sticky;
-  top: 0px;
-  width: 100%;
-}
-body header nav {
-  text-align: center;
-}
-body header nav ul {
-  list-style: none;
-}
-body header nav ul li {
-  float: left;
-  font-family: "Oswald", sans-serif;
-  font-size: 2rem;
-}
-body header nav ul li a {
-  display: block;
-  padding: 1rem;
-  color: #000000;
-  text-decoration: none;
-}
-body header nav ul li :hover {
-  background: #caf0f8;
-}
-body main {
+main {
   display: grid;
   flex-direction: row;
 }
-body main section {
-  padding: 3rem;
-}
-body main section .contacto {
+main .contacto {
   background-image: url(../medios/ig.png);
   background-position: 37% 43%;
   background-size: 40px;
@@ -225,52 +179,121 @@ body main section .contacto {
   text-align: center;
   color: white;
   border: solid #03045e;
-  background-color: #023e8a;
+  background-color: #000000;
   display: flex;
   flex-direction: column;
 }
-body main section .contacto .tituloContacto {
+main .contacto .tituloContacto {
   font-family: "Merriweather", serif;
   font-size: 50px;
   overflow: hidden;
   text-align: center;
   width: 100%;
-  color: black;
+  color: rgb(255, 255, 255);
 }
-body main section .contacto .textoContacto {
+main .contacto .textoContacto {
   font-family: "Oswald", sans-serif;
   font-size: 30px;
-  color: black;
+  color: rgb(255, 255, 255);
 }
-body main section .contacto .contactoWsp {
+main .contacto .contactoWsp {
   background-image: url(../medios/wsp.png);
   background-size: 43px;
   background-position: 28% 45%;
   background-repeat: no-repeat;
   text-align: center;
 }
-body main section .contacto .contactoGmail {
+main .contacto .contactoGmail {
   background-image: url(../medios/logoGmail.png);
   background-size: 65px;
   background-position: 26% 45%;
   background-repeat: no-repeat;
   text-align: center;
 }
-body main section .set {
-  background-color: #023e8a;
-  border: solid #03045e;
+main .set {
+  background-color: #000000;
+  border: solid #000000;
 }
-body main section .set .formulario {
+main .set form {
+  background-color: black;
+  color: white;
+}
+main .set .formulario {
   display: flex;
   flex-direction: column;
 }
-body main section .set .nameFormulario {
+main .set .nameFormulario {
   display: flex;
   flex-direction: column;
 }
-body main section .set .casillasFormulario {
+main .set .casillasFormulario {
   display: flex;
   flex-direction: column;
+}
+
+main section .tituloBlog {
+  font-size: 5rem;
+  text-align: center;
+  color: white;
+}
+main section .textoblog {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  color: white;
+}
+main .mapa {
+  background-color: black;
+  font-family: "Merriweather", serif;
+  font-size: 3rem;
+  border: #48cae4;
+  text-align: center;
+  block-size: 510px;
+  writing-mode: horizontal-tb;
+  border: solid blueviolet;
+}
+main .mapa .texmap {
+  font-size: 5rem;
+  font-family: "Merriweather", serif;
+  color: white;
+}
+
+main .proyectos {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px;
+  grid-template-areas: "titu titu" "p p";
+}
+main .proyectos .proyTitulo {
+  font-family: "Merriweather", serif;
+  color: rgb(0, 0, 0);
+  font-size: 7rem;
+  text-align: center;
+  grid-area: titu;
+  background-color: #fff;
+  border-radius: 53rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  justify-content: space-around;
+  padding: 2rem;
+  width: 97rem;
+  margin-top: 9rem;
+  border: solid blueviolet;
+}
+main .proyectos .pryTexto {
+  background-color: burlywood;
+  font-size: 2rem;
+  grid-area: p;
+  height: 23rem;
+  margin-top: 12rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  justify-content: space-around;
+  padding: 4rem;
+  width: 111rem;
 }
 
 footer {
@@ -279,8 +302,6 @@ footer {
   position: sticky;
   top: 0px;
   width: 100%;
-}
-footer .abajo {
   block-size: 50px;
   background-color: #48cae4;
 }
@@ -306,35 +327,29 @@ footer .abajo {
     top: 0px;
     width: 100%;
   }
-  .contenidoP{
+  .contenidoP {
     display: grid;
     flex-direction: column;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 100px);
-    grid-template-areas:
-        "foto"
-        "name"
-        "tex"
-        "tex";
+    grid-template-areas: "foto" "name" "tex" "tex";
     justify-items: center;
     width: 1%;
     border-radius: 2rem;
-}
-  .titulos{
-    font-family: "Merriweather", serif;
-    font-size: 50px;
-    overflow: hidden;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    padding: 20px 20px;
-    letter-spacing: 2px;
-    grid-area: name;
-    border-color: #48cae4;
-    background-color: rgb(255, 255, 255);
+  }
+  .contenidoP .imgME {
+    height: 1rem;
     width: 1rem;
-    border-color: blueviolet;
-    border-bottom-right-radius: 50%;
-
+  }
+  .contenidoP .titulos {
+    font-size: 3rem;
+    width: 1rem;
+    text-align: center;
+  }
+  .contenidoP .texto {
+    font-size: 1.5rem;
+    height: 1px;
+    padding-left: 1rem;
   }
   .textoblog {
     font-size: 2rem;
@@ -351,12 +366,22 @@ footer .abajo {
     top: 0px;
     width: 100%;
   }
-  .proy {
-    font-size: 1.2rem;
+  .proyectos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px;
+    grid-template-areas: "titu" "p";
   }
-  s .pry2 {
-    font-size: 1.3rem;
-    padding-bottom: 1rem;
+  .proyectos .proyTitulo {
+    width: 0rem;
+    height: 0rem;
+    align-items: start;
+    grid-area: titu;
+  }
+  .proyectos .pryTexto {
+    width: 0rem;
+    grid-area: p;
+    margin-top: 0;
   }
   .contacto {
     font-size: 1.5rem;
@@ -374,25 +399,23 @@ footer .abajo {
   .contactoGmail {
     background-image: none;
   }
-  .texto{ 
-    font-family: "Oswald", sans-serif;
-    font-size: 2.5rem;
-    height: 91px;
-    display: inline-block;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    margin: 3rem 4rem;
-    padding-left: -8rem;
-    grid-area: tex;
-    border: 2px solid blueviolet;   
-  }
-  .contenidoDos{  
+  .contenidoDos {
+    width: 1%;
+    background-size: 5px;
+    background-position: 3% 5%;
+    background-color: rgb(144, 175, 202);
+    padding: 5px 1px 5px 1px;
+    display: grid;
+    background-color: #fff;
+    border-radius: 2rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     padding: 2rem;
     width: 1rem;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
     grid-template-columns: 100px;
     grid-template-areas: 
+    "scrip" 
     "scrip"
     "html"
     "css"
@@ -400,20 +423,41 @@ footer .abajo {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 7px solid violet;
+    border: 7px solid blueviolet;
   }
-  .imgME{     
+  .contenidoDos .imgHTML {
+    background-image: url(../medios/html.png);
     background-repeat: no-repeat;
-    block-size: 30px 30px;
-    background-size: 250%;
-    border: 3px solid blueviolet;
-    border-radius: 2rem;
-    height: 2rem;
-    width: 2rem;
-    background-position-x: 49%;
-    background-position-y: 39%;
-    grid-area: foto;
-    border-color: blueviolet;
+    block-size: 3px 3px;
+    background-size: 100%;
+    height: 0rem;
+    width: 0rem;
+    background-position-x: 4%;
+    background-position-y: 5%;
+    grid-area: html;
+    block-size: 1%;
+  }
+  .contenidoDos .imgcss {
+    background-image: url(../medios/css.png);
+    background-repeat: no-repeat;
+    block-size: 3px 3px;
+    background-size: 1%;
+    height: 1rem;
+    width: 1rem;
+    background-position-x: 4%;
+    background-position-y: 4%;
+    grid-area: css;
+  }
+  .contenidoDos .imgGit {
+    background-image: url(../medios/git.png);
+    background-repeat: no-repeat;
+    block-size: 3px 3px;
+    background-size: 1%;
+    height: 1rem;
+    width: 1rem;
+    background-position-x: 4%;
+    background-position-y: 4%;
+    grid-area: git;
   }
   nav ul li {
     font-size: 1.7rem;

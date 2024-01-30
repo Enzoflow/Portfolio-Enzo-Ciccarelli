@@ -1,0 +1,42 @@
+main{
+    .proyectos{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px;
+        grid-template-areas: 
+        "titu titu"
+        "p p";
+            .proyTitulo{
+                font-family: 'Merriweather', serif;
+                color: rgb(0, 0, 0);
+                font-size: 7rem;
+                text-align: center;
+                grid-area: titu;
+                background-color: #fff;
+                border-radius: 53rem;
+                box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -4px rgba(0,0,0,.1);
+                box-sizing: border-box;
+                justify-content: space-around;
+                padding: 2rem;
+                width: 97rem;
+                margin-top: 9rem;
+                border: solid blueviolet;
+            }
+            .pryTexto{
+                background-color: burlywood;
+                font-size: 2rem;
+                grid-area: p;
+                height: 23rem;
+                margin-top: 12rem;
+                background-color: #fff;
+                border-radius: 2rem;
+                box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -4px rgba(0,0,0,.1);
+                box-sizing: border-box;
+                justify-content: space-around;
+                padding: 4rem;
+                width: 111rem; 
+            }
+    }
+}
