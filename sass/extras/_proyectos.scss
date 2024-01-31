@@ -37,6 +37,17 @@ main{
                 justify-content: space-around;
                 padding: 4rem;
                 width: 111rem; 
+                .hub{
+                    background-size: 13rem;
+                    background-repeat: no-repeat;
+                    height: 13rem;
+                    padding-left: 45rem;
+                }
+                .visitala{
+                    font-size: 3rem;    
+                    text-align: center;
+                    height: 11rem;
+                }
             }
     }
 }

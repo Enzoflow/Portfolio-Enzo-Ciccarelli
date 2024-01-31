@@ -295,6 +295,17 @@ main .proyectos .pryTexto {
   padding: 4rem;
   width: 111rem;
 }
+main .proyectos .pryTexto .hub {
+  background-size: 13rem;
+  background-repeat: no-repeat;
+  height: 13rem;
+  padding-left: 45rem;
+}
+main .proyectos .pryTexto .visitala {
+  font-size: 3rem;
+  text-align: center;
+  height: 11rem;
+}
 
 footer {
   width: 100%;
@@ -338,6 +349,7 @@ footer {
     border-radius: 2rem;
   }
   .contenidoP .imgME {
+    background-image: none;
     height: 1rem;
     width: 1rem;
   }
@@ -379,7 +391,7 @@ footer {
     grid-area: titu;
   }
   .proyectos .pryTexto {
-    width: 0rem;
+    width: 1rem;
     grid-area: p;
     margin-top: 0;
   }
@@ -400,8 +412,6 @@ footer {
     background-image: none;
   }
   .contenidoDos {
-    width: 1%;
-    background-size: 5px;
     background-position: 3% 5%;
     background-color: rgb(144, 175, 202);
     padding: 5px 1px 5px 1px;
@@ -414,19 +424,15 @@ footer {
     width: 1rem;
     grid-template-columns: 1fr;
     grid-template-columns: 100px;
-    grid-template-areas: 
-    "scrip" 
-    "scrip"
-    "html"
-    "css"
-    "git";
+    grid-template-areas: "scrip" "scrip" "html" "css" "git";
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border: 7px solid blueviolet;
+    height: 1rem;
   }
   .contenidoDos .imgHTML {
-    background-image: url(../medios/html.png);
+    background-image: none;
     background-repeat: no-repeat;
     block-size: 3px 3px;
     background-size: 100%;
