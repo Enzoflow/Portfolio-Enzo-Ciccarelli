@@ -163,3 +163,158 @@
         }
     }
 }   
+@media only screen and (max-width:450px){
+    body{
+        main{
+            flex-direction: column;
+            section{
+                .contenidoP{
+                    background-color: rgb(0, 0, 0);
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 100px;
+                    grid-template-areas: 
+                    "foto"
+                    "foto"
+                    "name"
+                    "tex";
+                    justify-items: center;
+                    border: none;
+                    .imgME{
+                        height: 20rem;
+                        width: 20rem;
+                        grid-area: foto;
+                        padding: 1rem;
+                        border-radius: 6rem;
+                    }
+                    .titulos{
+                        width: 24rem;
+                        padding: 1rem;
+                        margin: 1rem;
+                        border-bottom-right-radius: 1rem;
+                        background-color: black;
+                        color: white;
+                    }
+                    .texto{ 
+                        height: 1rem;
+                        margin: 0.8rem;
+                        padding-left: 0rem;
+                        width: 20rem;
+                    }
+                }
+                .contenidoDos{
+                    display: grid;
+                    width: 25rem;
+                    grid-template-columns: 1fr;
+                    grid-template-rows:  100px;
+                    grid-template-areas: 
+                    "scrip" "html"
+                    "css"  "git";
+                    justify-items: center;
+                    margin-left: 4rem; 
+                    margin-top: 1.5rem; 
+                    .contenidoDosTexto{
+                        height: 9rem;
+                        font-size: 2.5rem;
+                        width: 22rem;
+                    }
+                    .imgHTML{
+                        width: 12rem;
+                        height: 12rem;
+                        grid-area: html;
+                    }
+                    .imgcss{
+                        height: 12rem;
+                        width: 12rem;
+                        grid-area: css;
+                    }
+                    .imgGit{
+                        height: 12rem;
+                        width: 12rem;
+            }   }   }
+            .proyectos{
+                background-color: blueviolet;
+                grid-template-areas: 
+                "titu "
+                "titu"
+                "p" 
+                "p";
+                .proyTitulo{
+                    width: 25rem;
+                    font-size: 5rem;    
+                    margin-top: 1rem;
+                }   
+                .pryTexto{
+                    width: 27rem;
+                    font-size: 0.8rem;
+                    padding-top: 2rem;
+                    margin-top: 8rem;
+                    padding-bottom: 26rem;
+                    .visitala{
+                        height: 10rem;
+                        .hub{
+                            padding-bottom: -50rem;
+                    }    }
+                }
+            }
+            .proy{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 300px;
+                grid-template-areas: 
+                "titu" 
+                "foto" 
+                "dp" 
+                "estu" 
+                "habi"
+                "com"
+                "el";
+                .tituloProy{
+                    font-size: 3.5rem;
+                    width: 29rem;
+                    height: 1rem;
+                    margin-left: 0rem;
+                    margin-bottom: 20rem;
+                    border: none
+                }
+                .datos_personales{
+                    font-size: 2rem;
+                    margin-top: 3rem;
+                    border-bottom: solid gray;
+                    
+                }
+                .foto_cu{
+                    width: 23rem;
+                    height: 27rem;
+                    margin-left: 3rem;
+                    margin-top: -18rem;
+                }
+
+                .estudios{
+                    font-size: 2rem;
+                    width: 27rem;
+                    margin-top: 1rem;
+                    border-bottom: solid gray;
+                }
+                .experiencia_laboral{
+                    font-size: 2rem;
+                    width: 27rem;
+                    margin-top: 1rem;
+                    margin-left: 1rem;
+                    border-bottom: solid gray;
+                }
+
+                .competencia{
+                    font-size: 2rem;
+                    width: 27rem;
+                    margin-left: 1rem;
+                    margin-top: 1rem;
+                    border-bottom: solid gray;
+                }
+                .habilidades{
+                    font-size: 2rem;
+                    width: 27rem;
+                    margin-top: 1rem;
+                    border-bottom: solid gray;
+                }
+            }               
+}   }    }        
