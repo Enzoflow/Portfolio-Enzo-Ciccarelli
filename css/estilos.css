@@ -313,7 +313,7 @@ header {
   margin-top: -29rem;
 }
 .proy .foto_cu {
-  background-image: url("/medios/fotocurri.jpeg");
+  background-image: url("../medios/fotocurri.jpeg");
   background-repeat: no-repeat;
   grid-area: foto;
   width: 32rem;
