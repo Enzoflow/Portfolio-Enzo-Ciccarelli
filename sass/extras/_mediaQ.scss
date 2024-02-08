@@ -1,166 +1,165 @@
-@media only screen and (max-width: 480px) {
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    html{
-        overflow: none;
-    }
-    main{
-        flex-direction: column;
-    }
+@media only screen and (max-width:500px){
     body{
-        background-color: blueviolet;
-        max-width: 100%;
-        
-    }
-    header{
-        font-size: 1rem;
-        position: sticky;
-        top: 0px;
-        width: 100%;
-    }
-    .contenidoP{
-        display: grid;
-        flex-direction: column;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 100px);
-        grid-template-areas:
-        "foto"
-        "name"
-        "tex"
-        "tex";
-        justify-items: center;    
-        width: 1%;
-        border-radius: 2rem;
-        .imgME{   
-            background-image: none;  
-            height: 1rem;
-            width: 1rem;
-            
+        background-color: rgb(0, 0, 0);
+        main{
+            flex-direction: column;
+            section{
+                .contenidoP{
+                    background-color: rgb(0, 0, 0);
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 100px;
+                    grid-template-areas: 
+                    "foto"
+                    "foto"
+                    "name"
+                    "tex";
+                    justify-items: center;
+                    border: none;
+                    .imgME{
+                        height: 26rem;
+                        width: 25rem;
+                        grid-area: foto;
+                        padding: 1rem;
+                        border-radius: 6rem;
+                    }
+                    .titulos{
+                        width: 28rem;
+                        padding: 1rem;
+                        margin: 1rem;
+                        border-bottom-right-radius: 1rem;
+                        background-color: black;
+                        color: white;
+                    }
+                    .texto{ 
+                        height: 12rem;
+                        margin: 0.5rem;
+                        padding-left: 0rem;
+                        width: 37rem;
+                    }
+                }
+                .contenidoDos{
+                    display: grid;
+                    width: 28rem;
+                    grid-template-columns: 1fr;
+                    grid-template-rows:  100px;
+                    grid-template-areas: 
+                    "scrip" "html"
+                    "css"  "git";
+                    justify-items: center;
+                    margin-left: 8rem; 
+                    margin-top: 1.5rem; 
+                    .contenidoDosTexto{
+                        height: 9rem;
+                        font-size: 2.5rem;
+                        width: 22rem;
+                    }
+                    .imgHTML{
+                        width: 12rem;
+                        height: 12rem;
+                        grid-area: html;
+                    }
+                    .imgcss{
+                        height: 12rem;
+                        width: 12rem;
+                        grid-area: css;
+                    }
+                    .imgGit{
+                        height: 12rem;
+                        width: 12rem;
+                    }
+                }
+                .tituloBlog{
+                    padding-bottom: 1rem;
+                }
+                .textoblog{
+                    font-size: 2rem;
+                }
+            }   
+            .proyectos{
+                grid-template-areas: 
+                "titu "
+                "titu"
+                "p" 
+                "p";
+                .proyTitulo{
+                    width: 35rem;
+                    font-size: 6rem;
+                }   
+                .pryTexto{
+                    width: 41rem;
+                    font-size: 1rem;
+                    .visitala{
+                        height: 1rem;
+                        .hub{
+                            height: 7rem;
+                            padding-bottom: 1rem;
+                            padding-left: 12rem;
+                    }    }
+                }
+            } 
+            .contacto{
+               background-image: none;
+               .contactoWsp{
+                background-image: none;
+               }
+               .contactoGmail{
+                background-image: none;
+               } 
+            }
+            .proy{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 300px;
+                grid-template-areas: 
+                "titu" 
+                "foto" 
+                "dp" 
+                "estu" 
+                "habi"
+                "com"
+                "el";
+                .tituloProy{
+                    font-size: 4rem;
+                    width: 41rem;
+                    height: 9rem;
+                    margin-left: 0rem;
+                    margin-bottom: 10rem;
+                }
+                .datos_personales{
+                    font-size: 2rem;
+                    margin-top: 3rem;
+                    
+                }
+                .foto_cu{
+                    width: 24rem;
+                    height: 26rem;
+                    margin-left: 9rem;
+                    margin-top: -13rem;
+                }
+
+                .estudios{
+                    font-size: 2rem;
+                    width: 40rem;
+                }
+                .experiencia_laboral{
+                    font-size: 2rem;
+                    width: 40rem;
+                    margin-top: 1rem;
+                    margin-left: 1rem;
+                }
+
+                .competencia{
+                    font-size: 2rem;
+                    width: 40rem;
+                    margin-left: 1rem;
+                    margin-top: 1rem;
+                }
+                .habilidades{
+                    font-size: 2rem;
+                    width: 28rem;
+                    margin-top: 1rem;
+                }
+            }       
         }
-        .titulos{
-            font-size: 3rem;
-            width: 1rem;
-            text-align: center; 
-        }
-        .texto{ 
-            font-size: 1.5rem;
-            height: 1px;
-            padding-left: 1rem;    
-        }
     }
-    .textoblog{
-        font-size: 2rem;
-        width: 100%;
-    } 
-    .mapa{
-        font-size: 3rem;
-        width: 100%;
-        
-    }
-    footer{
-        padding-top: 1rem;
-        height: 81px;
-        position: sticky;
-        top: 0px;
-        width: 100%;
-    }
-    .proyectos{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 100px;
-        grid-template-areas: 
-        "titu" 
-        "p";
-    .proyTitulo{
-        width: 0rem;
-        height: 0rem;
-        align-items: start;
-        grid-area: titu;
-    }
-    .pryTexto{
-        width: 1rem;
-        grid-area: p;
-        margin-top: 0;
-    }
-    }    
-    .contacto{
-        font-size: 1.5rem;
-        background-image: none;
-    }
-    .textoContacto{
-        font-size: 2.1rem;
-    }
-    .tituloContacto{
-        font-size: 3.3rem;
-    }
-    .contactoWsp{
-        background-image: none;
-    }
-    .contactoGmail{
-        background-image: none;
-    }
-    .contenidoDos{  
-        background-position: 3% 5%;
-        background-color: rgb(144, 175, 202);
-        padding: 5px 1px 5px 1px;
-        display: grid;
-        background-color: #fff;
-        border-radius: 2rem;
-        box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -4px rgba(0,0,0,.1);
-        box-sizing: border-box;
-        padding: 2rem;
-        width: 1rem;
-        grid-template-columns:  1fr;
-        grid-template-columns: 100px;
-        grid-template-areas: 
-        "scrip" 
-        "scrip"
-         "html" 
-         "css"
-         "git";
-        flex-direction: column;
-        align-items: center;             
-        justify-content: center; 
-        border: 7px solid $bordevioleta;
-        height: 1rem;
-        .imgHTML{
-            background-image: none;
-            background-repeat: no-repeat;
-            block-size: 3px 3px;
-            background-size: 100%;
-            height: 0rem;
-            width: 0rem;
-            background-position-x: 4%;
-            background-position-y: 5%;
-            grid-area: html;
-            block-size: 1%;
-        }
-        .imgcss{
-            background-image: url(../medios/css.png);
-            background-repeat: no-repeat;
-            block-size: 3px 3px;
-            background-size: 1%;
-            height: 1rem;
-            width: 1rem;
-            background-position-x: 4%;
-            background-position-y: 4%;
-            grid-area: css;
-        }
-        .imgGit{
-            background-image: url(../medios/git.png);
-            background-repeat: no-repeat;
-            block-size: 3px 3px;
-            background-size: 1%;
-            height: 1rem;
-            width: 1rem;
-            background-position-x: 4%;
-            background-position-y: 4%;
-            grid-area: git;
-        }
-    }
-    nav ul li{
-        font-size: 1.7rem;
-    }
-}
+}   
