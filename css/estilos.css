@@ -647,7 +647,6 @@ footer {
     width: 12rem;
   }
   body main .proyectos {
-    background-color: blueviolet;
     grid-template-areas: "titu " "titu" "p" "p";
   }
   body main .proyectos .proyTitulo {
