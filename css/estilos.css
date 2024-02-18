@@ -718,4 +718,486 @@ footer {
     margin-top: 1rem;
     border-bottom: solid gray;
   }
+}
+@media only screen and (min-width: 501px) and (max-width: 798px) {
+  body {
+    background-color: darkmagenta;
+  }
+  body main {
+    flex-direction: column;
+  }
+  body main section .contenidoP {
+    background-color: rgb(0, 0, 0);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px;
+    grid-template-areas: "foto" "name" "tex" "tex";
+    justify-items: center;
+    border: none;
+    border: solid white;
+  }
+  body main section .contenidoP .imgME {
+    height: 16rem;
+    width: 16rem;
+    grid-area: foto;
+    padding: 8rem;
+    border-radius: 6rem;
+    margin-top: 1rem;
+  }
+  body main section .contenidoP .titulos {
+    width: 20rem;
+    padding: 1rem;
+    margin: 2rem;
+    border-bottom-right-radius: 1rem;
+    background-color: black;
+    color: white;
+    margin-top: 4rem;
+    height: 13rem;
+    font-size: 2.5rem;
+  }
+  body main section .contenidoP .texto {
+    height: 13rem;
+    margin: 0.5rem;
+    padding-left: 0rem;
+    width: 18rem;
+    margin-top: 9rem;
+    font-size: 2rem;
+  }
+  body main section .contenidoDos {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    grid-template-areas: "scrip scrip scrip" "css html git";
+    justify-items: center;
+    margin-top: 1.5rem;
+  }
+  body main section .contenidoDos .contenidoDosTexto {
+    height: 9rem;
+    font-size: 2.5rem;
+    width: 10rem;
+    margin-left: 1rem;
+  }
+  body main section .contenidoDos .imgHTML {
+    width: 10rem;
+    height: 11rem;
+    margin-left: 1rem;
+    grid-area: html;
+    margin-top: 1rem;
+  }
+  body main section .contenidoDos .imgcss {
+    height: 11rem;
+    width: 10rem;
+    grid-area: css;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  body main section .contenidoDos .imgGit {
+    height: 9rem;
+    width: 9rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  body .proy {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px;
+    grid-template-areas: "titu" "foto" "dp" "estu" "habi" "com" "el";
+  }
+  body .proy .tituloProy {
+    font-size: 3.5rem;
+    width: 43rem;
+    height: -5rem;
+    margin-left: 0rem;
+    margin-bottom: 20rem;
+    border: none;
+  }
+  body .proy .datos_personales {
+    font-size: 2rem;
+    margin-top: 3rem;
+    border-bottom: solid gray;
+  }
+  body .proy .foto_cu {
+    width: 25rem;
+    height: 27rem;
+    margin-left: 9rem;
+    margin-top: -18rem;
+  }
+  body .proy .estudios {
+    font-size: 2rem;
+    width: 27rem;
+    margin-top: 1rem;
+    border-bottom: solid gray;
+  }
+  body .proy .experiencia_laboral {
+    font-size: 2rem;
+    width: 27rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    border-bottom: solid gray;
+  }
+  body .proy .competencia {
+    font-size: 2rem;
+    width: 27rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border-bottom: solid gray;
+  }
+  body .proy .habilidades {
+    font-size: 2rem;
+    width: 27rem;
+    margin-top: 1rem;
+    border-bottom: solid gray;
+  }
+  body .proyectos {
+    grid-template-areas: "titu " "titu" "p" "p";
+  }
+  body .proyectos .proyTitulo {
+    width: 37rem;
+    font-size: 3rem;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  body .proyectos .pryTexto {
+    width: 39rem;
+    font-size: 0.8rem;
+    padding-top: 2rem;
+    margin-top: 6rem;
+    padding-bottom: -6rem;
+    margin-bottom: 12rem;
+    height: 21rem;
+  }
+  body .proyectos .pryTexto .visitala {
+    height: 1rem;
+  }
+  body .proyectos .pryTexto .visitala .hub {
+    padding-bottom: 6rem;
+    height: 21rem;
+    padding-left: 8rem;
+    margin-top: -1rem;
+  }
+}
+@media only screen and (min-width: 799px) and (max-width: 899px) {
+  body {
+    background-color: darkmagenta;
+  }
+  body main {
+    flex-direction: column;
+  }
+  body main section .contenidoP {
+    background-color: rgb(0, 0, 0);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px;
+    grid-template-areas: "foto" "name" "tex" "tex";
+    justify-items: center;
+    border: none;
+    border: solid white;
+  }
+  body main section .contenidoP .imgME {
+    height: 16rem;
+    width: 16rem;
+    grid-area: foto;
+    padding: 8rem;
+    border-radius: 6rem;
+    margin-top: 1rem;
+  }
+  body main section .contenidoP .titulos {
+    width: 34rem;
+    padding-top: 3rem;
+    margin: 2rem;
+    border-bottom-right-radius: 1rem;
+    background-color: black;
+    color: white;
+    margin-top: 4rem;
+    height: 13rem;
+    font-size: 3rem;
+    margin-left: -7rem;
+  }
+  body main section .contenidoP .texto {
+    height: 13rem;
+    margin: -1.5rem;
+    padding-left: 0rem;
+    width: 24rem;
+    margin-top: 9rem;
+    font-size: 2rem;
+  }
+  body main section .contenidoDos {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    grid-template-areas: "scrip scrip scrip" "css html git";
+    justify-items: center;
+    margin-top: 1.5rem;
+  }
+  body main section .contenidoDos .contenidoDosTexto {
+    height: 13rem;
+    font-size: 2.5rem;
+    width: 33rem;
+    margin-left: 18rem;
+  }
+  body main section .contenidoDos .imgHTML {
+    width: 10rem;
+    height: 12rem;
+    margin-left: -45rem;
+    grid-area: html;
+    margin-top: -8rem;
+  }
+  body main section .contenidoDos .imgcss {
+    height: 10rem;
+    width: 10rem;
+    grid-area: css;
+    margin-left: -9rem;
+    margin-top: -8rem;
+  }
+  body main section .contenidoDos .imgGit {
+    height: 9rem;
+    width: 9rem;
+    margin-left: -38rem;
+    margin-top: -8rem;
+  }
+  body .proy {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px;
+    grid-template-areas: "titu" "foto" "dp" "estu" "habi" "com" "el";
+  }
+  body .proy .tituloProy {
+    font-size: 3.5rem;
+    width: 43rem;
+    height: -5rem;
+    margin-left: 0rem;
+    margin-bottom: 20rem;
+    border: none;
+  }
+  body .proy .datos_personales {
+    font-size: 2rem;
+    margin-top: 3rem;
+    border-bottom: solid gray;
+  }
+  body .proy .foto_cu {
+    width: 25rem;
+    height: 27rem;
+    margin-left: 9rem;
+    margin-top: -18rem;
+  }
+  body .proy .estudios {
+    font-size: 2rem;
+    width: 27rem;
+    margin-top: 1rem;
+    border-bottom: solid gray;
+  }
+  body .proy .experiencia_laboral {
+    font-size: 2rem;
+    width: 27rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    border-bottom: solid gray;
+  }
+  body .proy .competencia {
+    font-size: 2rem;
+    width: 27rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border-bottom: solid gray;
+  }
+  body .proy .habilidades {
+    font-size: 2rem;
+    width: 27rem;
+    margin-top: 1rem;
+    border-bottom: solid gray;
+  }
+  body .proyectos {
+    grid-template-areas: "titu " "titu" "p" "p";
+  }
+  body .proyectos .proyTitulo {
+    width: 37rem;
+    font-size: 3rem;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  body .proyectos .pryTexto {
+    width: 39rem;
+    font-size: 0.8rem;
+    padding-top: 2rem;
+    margin-top: 6rem;
+    padding-bottom: -6rem;
+    margin-bottom: 12rem;
+    height: 21rem;
+  }
+  body .proyectos .pryTexto .visitala {
+    height: 1rem;
+  }
+  body .proyectos .pryTexto .visitala .hub {
+    padding-bottom: 6rem;
+    height: 21rem;
+    padding-left: 8rem;
+    margin-top: -1rem;
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 950px) {
+  body {
+    background-color: darkmagenta;
+  }
+  body main {
+    flex-direction: column;
+  }
+  body main section .contenidoP {
+    background-color: rgb(0, 0, 0);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px;
+    grid-template-areas: "foto" "name" "tex" "tex";
+    justify-items: center;
+    border: none;
+    border: solid white;
+  }
+  body main section .contenidoP .imgME {
+    height: 16rem;
+    width: 16rem;
+    grid-area: foto;
+    padding: 8rem;
+    border-radius: 6rem;
+    margin-top: 1rem;
+  }
+  body main section .contenidoP .titulos {
+    width: 51rem;
+    padding-top: 3rem;
+    margin: 2rem;
+    border-bottom-right-radius: 1rem;
+    background-color: black;
+    color: white;
+    margin-top: 4rem;
+    height: 13rem;
+    font-size: 3rem;
+    margin-left: -7rem;
+  }
+  body main section .contenidoP .texto {
+    height: 3rem;
+    margin: -1.5rem;
+    padding-left: 0rem;
+    width: 29rem;
+    margin-top: 8rem;
+    font-size: 2rem;
+  }
+  body main section .contenidoDos {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    grid-template-areas: "scrip scrip scrip" "css html git";
+    justify-items: center;
+    margin-top: 1.5rem;
+  }
+  body main section .contenidoDos .contenidoDosTexto {
+    height: 11rem;
+    font-size: 2.5rem;
+    width: 48rem;
+    margin-left: -7rem;
+    margin-top: 12rem;
+    font-size: 3rem;
+  }
+  body main section .contenidoDos .imgHTML {
+    width: 10rem;
+    height: 12rem;
+    margin-right: -13rem;
+    grid-area: html;
+    margin-top: -8rem;
+  }
+  body main section .contenidoDos .imgcss {
+    height: 10rem;
+    width: 10rem;
+    grid-area: css;
+    margin-left: 55rem;
+    margin-top: -8rem;
+  }
+  body main section .contenidoDos .imgGit {
+    height: 9rem;
+    width: 9rem;
+    margin-left: -24rem;
+    margin-top: -21rem;
+  }
+  body .proy {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px;
+    grid-template-areas: "titu titu" "foto foto" "dp dp" "estu estu" "habi com" "el";
+  }
+  body .proy .tituloProy {
+    font-size: 3.5rem;
+    width: 100%;
+    height: -5rem;
+    margin-left: 0rem;
+    margin-bottom: 15rem;
+  }
+  body .proy .datos_personales {
+    font-size: 2rem;
+    margin-top: -31rem;
+    border-bottom: solid gray;
+    margin-left: 1rem;
+  }
+  body .proy .foto_cu {
+    width: 23rem;
+    height: 24rem;
+    margin-left: 39%;
+    margin-top: -9rem;
+  }
+  body .proy .estudios {
+    font-size: 2rem;
+    width: 42rem;
+    margin-top: -10rem;
+    border-bottom: solid gray;
+    margin-left: 7rem;
+  }
+  body .proy .experiencia_laboral {
+    font-size: 2rem;
+    width: 27rem;
+    margin-top: -69rem;
+    margin-left: 3rem;
+    border-bottom: solid gray;
+  }
+  body .proy .competencia {
+    font-size: 2rem;
+    width: 41rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border-bottom: solid gray;
+    margin-left: 6rem;
+  }
+  body .proy .habilidades {
+    font-size: 2rem;
+    width: 27rem;
+    margin-top: 1rem;
+    border-bottom: solid gray;
+    margin-left: 1rem;
+  }
+  body .proyectos {
+    grid-template-areas: "titu " "titu" "p" "p";
+  }
+  body .proyectos .proyTitulo {
+    width: 55rem;
+    font-size: 5rem;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    height: 9rem;
+  }
+  body .proyectos .pryTexto {
+    width: 70rem;
+    font-size: 0.8rem;
+    padding-top: 2rem;
+    margin-top: 6rem;
+    padding-bottom: -6rem;
+    margin-bottom: 12rem;
+    height: 58rem;
+  }
+  body .proyectos .pryTexto .texP {
+    font-size: 3rem;
+  }
+  body .proyectos .pryTexto .visitala {
+    height: 1rem;
+  }
+  body .proyectos .pryTexto .visitala .hub {
+    padding-bottom: 8rem;
+    height: 47rem;
+    padding-left: 10rem;
+    margin-top: -1rem;
+  }
 }/*# sourceMappingURL=estilos.css.map */
