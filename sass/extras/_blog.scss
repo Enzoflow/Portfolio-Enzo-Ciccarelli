@@ -1,4 +1,7 @@
-main{
+.mainBlog{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 56rem;
     section{
         .tituloBlog{
             font-size: 5rem;

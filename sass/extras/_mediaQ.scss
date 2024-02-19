@@ -68,12 +68,6 @@
                         width: 12rem;
                     }
                 }
-                .tituloBlog{
-                    padding-bottom: 1rem;
-                }
-                .textoblog{
-                    font-size: 2rem;
-                }
             }   
             .proyectos{
                 grid-template-areas: 
@@ -88,6 +82,7 @@
                 .pryTexto{
                     width: 41rem;
                     font-size: 1rem;
+                    margin-bottom: 4rem;
                     .visitala{
                         height: 1rem;
                         .hub{
@@ -97,15 +92,6 @@
                     }    }
                 }
             } 
-            .contacto{
-               background-image: none;
-               .contactoWsp{
-                background-image: none;
-               }
-               .contactoGmail{
-                background-image: none;
-               } 
-            }
             .proy{
                 display: grid;
                 grid-template-columns: 1fr;
@@ -161,6 +147,64 @@
                 }
             }       
         }
+        .mainCon{
+            grid-template-columns: 1fr;
+            grid-template-rows: 56rem;
+            grid-template-areas: 
+            "redes"
+            "formu";
+            .contacto{
+               background-image: none;
+               margin-left: auto;
+               margin-right: auto;
+               width: 32rem;
+               .tituloContacto{
+                margin-left: 3rem;
+               }
+               .contactoWsp{
+                margin-left: -13rem;
+
+               }
+               .contactoGmail{
+                    background-image: none;
+               } 
+            }
+            .set{
+                margin-right: 1rem;
+                margin-left: 1rem;
+                border-left: none;
+                .formtitu{
+                    color: #fff;
+                    font-size: 3rem;
+                    text-align: center;
+                    margin-top: 1rem;
+                    margin-top: -9rem;
+                    margin-bottom: 1rem;
+                }
+            }
+            
+        }
+        .mainBlog{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 56rem;
+            grid-template-areas: 
+              "tex"
+              "map";
+            section{
+                .tituloBlog{
+                    grid-area: tex;
+                }
+                .textoblog{
+                    font-size: 2.2rem;
+                }
+            }    
+            .mapa{
+                grid-area: map;
+                margin-top: 2.9rem;
+            }  
+          }                
+
     }
 }   
 @media only screen and (max-width:450px){
@@ -315,13 +359,282 @@
                     margin-top: 1rem;
                     border-bottom: solid gray;
                 }
+            }
+            .mainCon{
+                grid-template-columns: 1fr;
+                grid-template-rows: 56rem;
+                grid-template-areas: 
+                "redes"
+                "formu";
+                .contacto{
+                   margin-left: auto;
+                   margin-right: auto;
+                   width: 32rem;
+                   .tituloContacto{
+                    margin-left: 3rem;
+                   }
+                   .contactoWsp{
+                    margin-left: -13rem;
+    
+                   }
+                   .contactoGmail{
+                        background-image: none;
+                   } 
+                }
+                .set{
+                    margin-right: 1rem;
+                    margin-left: 1rem;
+                    border-left: none;
+                    .formtitu{
+                        color: #fff;
+                        font-size: 3rem;
+                        text-align: center;
+                        margin-top: 1rem;
+                        margin-top: -9rem;
+                        margin-bottom: 1rem;
+                    }
+                }
+                
             }               
 }   }    }
-@media only screen and (min-width: 501px) and (max-width:798px){
+@media only screen and (min-width: 501px) and (max-width:699px){
     body{
-        header{
+        main{
+            flex-direction: column;
+            .set{
+                .formulario{
+                    margin-bottom: 13rem;
+                    padding: 1rem;
+                    margin-top: 6rem;
+                }
+            }
+            section{
+                .contenidoP{
+                    background-color: rgb(0, 0, 0);
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 100px;
+                    grid-template-areas: 
+                    "foto" 
+                    "name"  
+                    "tex" 
+                    "tex";
+                    justify-items: center;
+                    border: none;
+                    border: solid white;
+                    .imgME{
+                        height: 12rem;
+                        width: 12rem;
+                        grid-area: foto;
+                        padding: 9rem;
+                        border-radius: 6rem;
+                        margin-top: 2rem;
+                    }
+                    .titulos{
+                        width: 13rem;
+                        padding: 1rem;
+                        border-bottom-right-radius: 1rem;
+                        background-color: black;
+                        color: white;
+                        margin-top: 5rem;
+                        height: 9rem;
+                        font-size: 2rem;    
+                    }
+                    .texto{ 
+                        height: 22rem;
+                        margin: 0.5rem;
+                        padding-left: 0rem;
+                        width: 18rem;
+                        margin-top: 13rem;
+                        font-size: 2.8rem;
+                    }
+                }
+                .contenidoDos{
+                    display: grid;
+                    width: 100%;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows:  100px;
+                    grid-template-areas: 
+                    "scrip scrip scrip"
+                    "css html git";
+                    justify-items: center; 
+                    margin-top: 1.5rem; 
+                    .contenidoDosTexto{
+                        height: 13rem;
+                        font-size: 2.5rem;
+                        width: 18rem;
+                        margin-left: 1rem;
+                    }
+                    .imgHTML{
+                        width: 8rem;
+                        height: 8rem;
+                        margin-left: -9rem;
+                        grid-area: html;
+                        margin-top: -5rem;
+                    }
+                    .imgcss{
+                        height: 8rem;
+                        width: 8rem;
+                        grid-area: css;
+                        margin-left: 1rem;
+                        margin-top: -5rem;
+                    }
+                    .imgGit{
+                        height: 9rem;
+                        width: 8rem;
+                        margin-left: -6rem;
+                        margin-top: -6rem;
+                        margin-right: auto;
+            }   }    }
+        }   .proy{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 300px;
+            grid-template-areas: 
+            "titu" 
+            "foto" 
+            "dp" 
+            "estu" 
+            "habi"
+            "com"
+            "el";
+            .tituloProy{
+                font-size: 3.5rem;
+                width: 43rem;
+                height: 8rem;
+                margin-right: auto;
+                margin-bottom: 12rem;
+            }
+            .datos_personales{
+                font-size: 2rem;
+                margin-top: 1rem;
+                border-bottom: solid gray;
+                
+            }
+            .foto_cu{
+                width: 24rem;
+                height: 27rem;
+                margin-left: 9rem;
+                margin-right: auto;
+                margin-top: -16rem;
+            }
+
+            .estudios{
+                font-size: 2rem;
+                width: 40rem;
+                margin-top: 1rem;
+                border-bottom: solid gray;
+            }
+            .experiencia_laboral{
+                font-size: 2rem;
+                width: 38rem;
+                margin-top: 1rem;
+                margin-left: 1rem;
+                border-bottom: solid gray;
+            }
+
+            .competencia{
+                font-size: 2rem;
+                width: 37rem;
+                margin-left: 2rem;
+                margin-top: 1rem;
+                border-bottom: solid gray;
+            }
+            .habilidades{
+                font-size: 2rem;
+                width: 37rem;
+                margin-top: 3rem;
+                border-bottom: solid gray;
+            }
+        }   .proyectos{
+            grid-template-areas: 
+            "titu "
+            "titu"
+            "p" 
+            "p";
+            .proyTitulo{
+                width: 32rem;
+                font-size: 5rem;    
+                margin-top: 1rem;
+                padding-bottom: 1rem;
+                padding: 2rem;
+            }   
+            .pryTexto{
+                width: 36rem;
+                font-size: 0.8rem;
+                padding-top: 1rem;
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+                height: 55rem;
+                .texP{
+                    font-size: 3rem;
+                }
+                .visitala{
+                    height: 1rem;
+
+                    .hub{
+                        padding-bottom: 1rem;
+                        height: 13rem;
+                        padding-left: 20rem;
+                        margin-top: -1rem;
+                }   }
+            }
             
         }
+        .mainBlog{
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 56rem;
+          grid-template-areas: 
+            "tex"
+            "map";
+            section{
+                .tituloBlog{
+                    grid-area: tex;
+                }
+                .textoblog{
+                    font-size: 2.5rem;
+                }
+            }
+            .mapa{
+                grid-area: map;
+            }
+              
+        }
+        .mainCon{
+            grid-template-columns: 1fr;
+            grid-template-rows: 56rem;
+            grid-template-areas: 
+            "redes"
+            "formu";
+            .contacto{
+               background-image: none;
+               margin-left: auto;
+               margin-right: auto;
+               .contactoWsp{
+                    background-image: none;
+               }
+               .contactoGmail{
+                    background-image: none;
+               } 
+            }
+            .set{
+                margin-right: 1rem;
+                margin-left: 1rem;
+                border-left: none;
+                margin-bottom: -5rem;
+                .formtitu{
+                    color: #fff;
+                    font-size: 3rem;
+                    text-align: center;
+                    margin-top: -5rem;
+                    margin-bottom: -5rem;
+                }
+            }
+        }           
+    }
+}
+@media only screen and (min-width: 700px) and (max-width:798px){
+    body{
         main{
             flex-direction: column;
             .set{
@@ -500,7 +813,54 @@
                 }   }
             }
             
-        }            
+        }
+        .mainBlog{
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 56rem;
+          grid-template-areas: 
+            "tex"
+            "map";
+            section{
+                .tituloBlog{
+                    grid-area: tex;
+                }
+                .mapa{
+                    grid-area: map;
+                }
+            }  
+        }
+        .mainCon{
+            grid-template-columns: 1fr;
+            grid-template-rows: 56rem;
+            grid-template-areas: 
+            "redes"
+            "formu";
+            .contacto{
+               background-image: none;
+               margin-left: auto;
+               margin-right: auto;
+               .contactoWsp{
+                    background-image: none;
+               }
+               .contactoGmail{
+                    background-image: none;
+               } 
+            }
+            .set{
+                margin-right: 1rem;
+                margin-left: 1rem;
+                border-left: none;
+                margin-bottom: -5rem;
+                .formtitu{
+                    color: #fff;
+                    font-size: 3rem;
+                    text-align: center;
+                    margin-top: -5rem;
+                    margin-bottom: -5rem;
+                }
+            }
+        }           
     }
 }
 @media only screen and (min-width: 799px) and (max-width:899px){
@@ -654,18 +1014,18 @@
             "p" 
             "p";
             .proyTitulo{
-                width: 37rem;
+                width: 49rem;
                 font-size: 3rem;    
-                margin-top: 1rem;
-                padding-bottom: 1rem;
+                margin-top: 8rem;
+                padding-bottom: 0rem;
             }   
             .pryTexto{
                 width: 100%;
                 font-size: 0.8rem;
-                padding-top: 2rem;
-                margin-top: 6rem;
+                padding-top: 1rem;
+                margin-top: 13rem;
                 padding-bottom: -6rem;
-                margin-bottom: 12rem;
+                margin-bottom: 21rem;
                 height: 21rem;
                 .visitala{
                     height: 1rem;
@@ -673,11 +1033,62 @@
                     .hub{
                         padding-bottom: 6rem;
                         height: 21rem;
-                        padding-left: 8rem;
+                        padding-left: 27rem;
                         margin-top: -1rem;
                 }   }
             }
-        }            
+        }
+        .mainBlog{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 56rem;
+            grid-template-areas: 
+              "tex"
+              "map";
+              section{
+                  .tituloBlog{
+                      grid-area: tex;
+                  }
+                  .textoblog{
+                      font-size: 3rem;
+                  }
+              }
+              .mapa{
+                  grid-area: map;
+              }
+                
+        }
+        .mainCon{
+            grid-template-columns: 1fr;
+            grid-template-rows: 56rem;
+            grid-template-areas: 
+            "redes"
+            "formu";
+            .contacto{
+               background-image: none;
+               margin-left: auto;
+               margin-right: auto;
+               .contactoWsp{
+                    background-image: none;
+               }
+               .contactoGmail{
+                    background-image: none;
+               } 
+            }
+            .set{
+                margin-right: 1rem;
+                margin-left: 1rem;
+                border-left: none;
+                margin-bottom: -5rem;
+                .formtitu{
+                    color: #fff;
+                    font-size: 3rem;
+                    text-align: center;
+                    margin-top: -5rem;
+                    margin-bottom: -5rem;
+                }
+            }
+        }                        
     }
     
 }
@@ -864,7 +1275,74 @@
                         margin-top: -1rem;
                 }   }
             }
-        }            
+        }
+        .mainCon{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 56rem;
+            grid-template-areas: 
+              "tex"
+              "map";
+              section{
+                  .tituloBlog{
+                      grid-area: tex;
+                  }
+                  .mapa{
+                      grid-area: map;
+                  }
+              }  
+        }
+        .mainBlog{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 56rem;
+            grid-template-areas: 
+              "tex"
+              "map";
+              section{
+                  .tituloBlog{
+                      grid-area: tex;
+                  }
+                  .textoblog{
+                      font-size: 3.2rem;
+                  }
+              }
+              .mapa{
+                  grid-area: map;
+              }
+                
+        }
+        .mainCon{
+            grid-template-columns: 1fr;
+            grid-template-rows: 56rem;
+            grid-template-areas: 
+            "redes"
+            "formu";
+            .contacto{
+               background-image: none;
+               margin-left: auto;
+               margin-right: auto;
+               .contactoWsp{
+                    background-image: none;
+               }
+               .contactoGmail{
+                    background-image: none;
+               } 
+            }
+            .set{
+                margin-right: 1rem;
+                margin-left: 1rem;
+                border-left: none;
+                margin-bottom: -5rem;
+                .formtitu{
+                    color: #fff;
+                    font-size: 3rem;
+                    text-align: center;
+                    margin-top: -5rem;
+                    margin-bottom: -5rem;
+                }
+            }
+        }                                           
     }
     
 }
