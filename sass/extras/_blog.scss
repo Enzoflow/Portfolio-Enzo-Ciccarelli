@@ -6,28 +6,28 @@
         .tituloBlog{
             font-size: 5rem;
             text-align: center;
-            color: white;
+            color: $blanco;
             text-decoration: underline $bordevioleta;
         }
         .textoblog{
-            font-family: 'Oswald', sans-serif;
+            font-family: $letraOswald;
             font-size: 30px;
-            color: white; 
+            color: $blanco; 
         }
     }
     .mapa{
-        background-color: black;
-        font-family: 'Merriweather', serif;
+        background-color: $negro;
+        font-family: $letraMerri;
         font-size: 3rem;
         border: #48cae4;
         text-align: center;
         block-size: 510px;
         writing-mode: horizontal-tb;
-        border: solid blueviolet;
+        border: solid $bordevioleta;
         .texmap{
             font-size: 5rem;
-            font-family: 'Merriweather', serif;
-            color: white;
+            font-family: $letraMerri;
+            color: $blanco;
         }
     }
 }

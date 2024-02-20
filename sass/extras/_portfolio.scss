@@ -1,5 +1,5 @@
 header{
-    background-color: white;
+    background-color: $blanco;
 }
 .proy{
     background-color: #4a4e69;
@@ -16,28 +16,28 @@ header{
     align-items: center;
     .tituloProy{
         font-size: 6rem;
-        color: white;
+        color: $blanco;
         text-align: center;
         grid-area: titu;
         width: 55rem;
         font-family: "Protest Strike", sans-serif;
-        border: 4mm ridge black;
+        border: 4mm ridge $negro;
         margin-bottom: 6rem;
     }
     .hdatos{
         font-size: 3rem;
-        font-family: "Protest Revolution", sans-serif;
+        font-family: $letraPro;
         margin-bottom: 2rem;
-        color: white;
+        color: $blanco;
 
     }
     .datos_personales{
         font-size: 2rem;
         grid-area: dp;
-        font-family: "Montserrat", sans-serif;
+        font-family: $letraMonte;
         margin-bottom: 1rem;
         margin-left: 2rem;
-        color: white;
+        color: $blanco;
         margin-top: -29rem;
 
     }
@@ -50,62 +50,62 @@ header{
         background-position-x: 47%;
         background-position-y: 36%;
         border-radius: 7rem;
-        border: 3px solid black;
+        border: 3px solid $negro;
         margin-left: 14rem;
     }
     .hestu{
         font-size: 3rem;
-        font-family: "Protest Revolution", sans-serif;
-        color: white;
+        font-family: $letraPro;
+        color: $blanco;
     }
     .estudios{
         font-size: 2rem;
         grid-area: estu;
-        font-family: "Montserrat", sans-serif;
+        font-family: $letraMonte;
         margin-top: 8rem;
         margin-left: 2rem;
-        color: white;
+        color: $blanco;
     }
     .hel{
         font-size: 3rem;
-        font-family: "Protest Revolution", sans-serif;
-        color: white;
+        font-family: $letraPro;
+        color: $blanco;
     }
     .experiencia_laboral{
         font-size: 2rem;
         grid-area: el;
-        font-family: "Montserrat", sans-serif;
+        font-family: $letraMonte;
         margin-left: 66rem;
-        color: white;
+        color: $blanco;
         margin-top: -23rem;
         width: 34rem;
 
     }
     .hcom{
         font-size: 3rem;
-        font-family: "Protest Revolution", sans-serif;
-        color: white;
+        font-family: $letraPro;
+        color: $blanco;
     }
     .competencia{
         font-size: 2rem;
         grid-area: com;
-        font-family: "Montserrat", sans-serif;
+        font-family: $letraMonte;
         margin-left: -60rem;
-        color: white;
+        color: $blanco;
         margin-top: 2rem;
         margin-left: -63rem;
     }
     .hhabi{
         font-size: 3rem;
-        font-family: "Protest Revolution", sans-serif;
-        color: white;
+        font-family: $letraPro;
+        color: $blanco;
     }
     .habilidades{
         font-size: 2rem;
         grid-area: habi;
-        font-family: "Montserrat", sans-serif;
+        font-family: $letraMonte;
         margin-left: 2rem;
-        color: white;
+        color: $blanco;
         margin-top: -42rem; 
         width: 57rem;
     }

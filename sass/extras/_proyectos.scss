@@ -9,12 +9,12 @@ main{
         "titu titu"
         "p p";
             .proyTitulo{
-                font-family: 'Merriweather', serif;
-                color: rgb(0, 0, 0);
+                font-family: $letraMerri;
+                color: $negro;
                 font-size: 7rem;
                 text-align: center;
                 grid-area: titu;
-                background-color: #fff;
+                background-color: $blanco;
                 border-radius: 53rem;
                 box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -4px rgba(0,0,0,.1);
                 box-sizing: border-box;
@@ -25,12 +25,11 @@ main{
                 border: solid blueviolet;
             }
             .pryTexto{
-                background-color: burlywood;
                 font-size: 2rem;
                 grid-area: p;
                 height: 23rem;
                 margin-top: 12rem;
-                background-color: #fff;
+                background-color: $blanco;
                 border-radius: 2rem;
                 box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -4px rgba(0,0,0,.1);
                 box-sizing: border-box;
